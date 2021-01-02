@@ -2,6 +2,6 @@
 <language xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/tornado/language.xsd" languagecode="de" languagename="Deutsch" countrycode="de">
 	<category name="wcf.user.option">
         	<item name="wcf.user.option.eMarkaddress"><![CDATA[Deutsche eMark]]></item>
-        	<item name="wcf.user.option.eMarkaddress.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Gib{else}Geben Sie{/if} <strong>hier die eMark Adresse</strong> (z.B. NSpendebUuNUsYcTeZNgsfLkZVQeeDj5AV) ein.<br/><strong>Achtung! Die eMark Adresse kann nachträglich nicht geändert werden!</strong>]]></item>
+        	<item name="wcf.user.option.eMarkaddress.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Gib{else}Geben Sie{/if} <strong>hier {if LANGUAGE_USE_INFORMAL_VARIANT}deine{else}Ihre{/if} eMark Adresse</strong> (z.B. NSpendebUuNUsYcTeZNgsfLkZVQeeDj5AV) ein.<br/><strong>Achtung! Die eMark Adresse kann nachträglich nicht geändert werden!</strong>]]></item>
 	</category>
 </language>
