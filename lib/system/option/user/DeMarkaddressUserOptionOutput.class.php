@@ -16,7 +16,7 @@ class DeMarkaddressUserOptionOutput implements IUserOptionOutput {
 		$value = StringUtil::encodeHTML($value);
 				
 		return '<a href="#'.$value.'" class="jsTooltip jsStaticDialog" data-dialog-id="'.$value.'" title="QR-Code">'.$value.'</a>
-			<div id="'.$value.'" class="jsStaticDialogContent" style="display:none;text-align:center;" data-title="'.$value.'">
+			<div id="'.$value.'" class="jsStaticDialogContent" style="display:none;text-align:center;" data-title="'.$user->username.' - '.$value.'">
 				<img title="'.$value.'" src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl='.$value.'&chld=H|0" style="border:7px #e8be74 dashed;" />
 			</div>';
 	}
