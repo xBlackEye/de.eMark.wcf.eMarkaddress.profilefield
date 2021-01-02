@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.eMark.wcf.eMarkaddress.profilefield" xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/tornado/package.xsd">
+    <packageinformation>
+        <packagename><![CDATA[eMark address profile field]]></packagename>
+        <packagedescription><![CDATA[Adds an user profile field for the eMark address.]]></packagedescription>
+        <packagename language="de"><![CDATA[eMark Adresse Profilfeld]]></packagename>
+        <packagedescription language="de"><![CDATA[Fügt ein Benutzerprofilfeld für die eMark Adresse hinzu.]]></packagedescription>
+        <version>1.0.0</version>
+        <date>2021-01-02</date>
+    </packageinformation>
+	
+    <authorinformation>
+        <author><![CDATA[xBlackEye]]></author>
+        <authorurl><![CDATA[https://www.woltlab.com/user/1463954/]]></authorurl>
+    </authorinformation>
+	
+	<requiredpackages>
+		<requiredpackage minversion="3.0.0">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+
+    <compatibility>
+        <api version="2018" />
+    </compatibility>
+   
+    <instructions type="install">
+        <instruction type="file">files.tar</instruction>
+        <instruction type="userOption">userOption.xml</instruction>
+         <instruction type="language">language/*.xml</instruction>
+    </instructions>
+</package>
