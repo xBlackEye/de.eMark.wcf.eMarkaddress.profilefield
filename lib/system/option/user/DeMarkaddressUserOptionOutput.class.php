@@ -15,7 +15,7 @@ class DeMarkaddressUserOptionOutput implements IUserOptionOutput {
 		
 		$value = StringUtil::encodeHTML($value);
 		
-		$qrimg = = file_get_contents('/images/qr_codes/'.$value.'png');
+		$qrimg = file_get_contents('/images/qr_codes/'.$value.'png');
 		$qrimgurl = 'https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl='.$value.'&chld=H|0';
 		
 		$qrinfo = getimagesize($qrimg);
