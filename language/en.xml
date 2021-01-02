@@ -3,6 +3,5 @@
 	<category name="wcf.user.option">
 		<item name="wcf.user.option.eMarkaddress"><![CDATA[Deutsche eMark]]></item>
 		<item name="wcf.user.option.eMarkaddress.description"><![CDATA[<strong>Enter your eMark address</strong> (e.g. NSpendebUuNUsYcTeZNgsfLkZVQeeDj5AV).<br/><strong>Attention! The eMark address can't be changed afterwards!</strong>]]></item>
-		<item name="wcf.user.option.eMarkaddress.profile.title"><![CDATA[Deutsche eMark Address]]></item>
 	</category>
 </language>
