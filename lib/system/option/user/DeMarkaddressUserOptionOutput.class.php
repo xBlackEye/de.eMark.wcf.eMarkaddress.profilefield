@@ -14,10 +14,19 @@ class DeMarkaddressUserOptionOutput implements IUserOptionOutput {
 		if (empty($value)) return '';
 		
 		$value = StringUtil::encodeHTML($value);
+		
+		$qrimg = = file_get_contents('/images/qr_codes/'.$value.'png');
+		$qrimgurl = 'https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl='.$value.'&chld=H|0';
+		
+		$qrinfo = getimagesize($qrimg);
+
+		if(!$qrinfo){
+		    file_put_contents($qrimg, file_get_contents($qrimgurl));
+		}
 				
-		return '<a href="#'.$value.'" class="jsTooltip jsStaticDialog" data-dialog-id="'.$value.'" title="{lang}wcf.user.option.eMarkaddress.profile.title{/lang}">'.$value.'</a>
+		return '<a href="#'.$value.'" class="jsTooltip jsStaticDialog" data-dialog-id="'.$value.'" title="QR-Code">'.$value.'</a>
 			<div id="'.$value.'" class="jsStaticDialogContent" style="display: none" data-title="'.$value.'">
-				<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl='.$value.'&chld=H|0" /><br/><kbd>'.$value.'</kbd>
+				<img title="'.$value.'" src="https://deutsche-emark.org'.$qrimg.'" /><br><br><kbd>'.$value.'</kbd>
 			</div>';
 	}
 }
