@@ -17,7 +17,7 @@ class DeMarkaddressUserOptionOutput implements IUserOptionOutput {
 				
 		return '<a href="#'.$value.'" class="jsTooltip jsStaticDialog" data-dialog-id="'.$value.'" title="{lang}wcf.user.option.eMarkaddress.profile.title{/lang}">'.$value.'</a>
 			<div id="'.$value.'" class="jsStaticDialogContent" style="display: none" data-title="'.$value.'">
-				<img src="https://chart.apis.google.com/chart?cht=qr&chs=500x500&chl='.$value.'&chld=H|0" /><br/><kbd>'.$value.'</kbd>
+				<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl='.$value.'&chld=H|0" /><br/><kbd>'.$value.'</kbd>
 			</div>';
 	}
 }
