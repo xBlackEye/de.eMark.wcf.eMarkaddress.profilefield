@@ -7,7 +7,7 @@
                 <optiontype>text</optiontype>
                 <outputclass>wcf\system\option\user\DeMarkaddressUserOptionOutput</outputclass>
                 <validationpattern>^N[a-zA-Z1-9]+$</validationpattern>
-                <searchable>0</searchable>
+                <searchable>1</searchable>
                 <visible>15</visible>
                 <editable>6</editable>
             </option>
