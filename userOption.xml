@@ -5,7 +5,7 @@
             <option name="eMarkaddress">
                 <categoryname>profile.personal</categoryname>
                 <optiontype>text</optiontype>
-                <outputclass>wcf\system\option\user\eMarkaddressUserOptionOutput</outputclass>
+                <outputclass>wcf\system\option\user\DeMarkaddressUserOptionOutput</outputclass>
                 <validationpattern>^N[a-zA-Z1-9]+$</validationpattern>
                 <searchable>0</searchable>
                 <visible>15</visible>
