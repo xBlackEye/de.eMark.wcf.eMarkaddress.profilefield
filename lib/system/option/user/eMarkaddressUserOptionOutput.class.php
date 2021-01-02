@@ -9,7 +9,7 @@ use wcf\util\StringUtil;
  * @copyright   2021
  * @package     de.eMark.wcf.eMarkaddress.profilefield
  */
-class eMarkaddressUserOptionOutput implements IUserOptionOutput {
+class DeMarkaddressUserOptionOutput implements IUserOptionOutput {
     	public function getOutput(User $user, UserOption $option, $value) {
 		if (empty($value)) return '';
 		
