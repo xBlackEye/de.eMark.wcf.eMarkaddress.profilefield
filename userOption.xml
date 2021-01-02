@@ -6,7 +6,7 @@
                 <categoryname>profile.personal</categoryname>
                 <optiontype>text</optiontype>
                 <outputclass>wcf\system\option\user\DeMarkaddressUserOptionOutput</outputclass>
-                <validationpattern>^N[a-zA-Z1-9]+$</validationpattern>
+                <validationpattern>^N[a-zA-Z1-9]{25,34}$</validationpattern>
                 <searchable>1</searchable>
                 <visible>15</visible>
                 <editable>6</editable>
