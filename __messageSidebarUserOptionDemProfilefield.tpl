@@ -1,5 +1,5 @@
 {if USER_DEMPROFILEFIELDOPTIONS_SHOWSIDEBAR_ENABLE == 1 && $userProfile->isAccessible('canViewProfile') && !$isReply}
-{assign var='__sidebarUserOptions' value=','|explode:MESSAGE_SIDEBAR_USER_OPTIONS_SIDEBARDEMPROFILEFIELD}
+{assign var='__sidebarUserOptions' value=','|explode:MESSAGE_SIDEBAR_USER_OPTIONS_SIDEBARPROFILEFIELD}
 	<div class="userDemProfilefield">
 		{foreach from=$__sidebarUserOptions item='__sidebarUserOption'}
 			{if $userProfile->getUserOption($__sidebarUserOption)}
