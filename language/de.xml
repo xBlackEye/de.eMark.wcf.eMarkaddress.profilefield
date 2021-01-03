@@ -8,6 +8,5 @@
 		<item name="wcf.acp.option.category.user.demprofilefieldoptions"><![CDATA[Deutsche eMark Profilfeld]]></item>
 		<item name="wcf.acp.option.user_demprofilefieldoptions_showabout_enable"><![CDATA[eMark Profilfeld auf der "Über mich" Seite anzeigen?]]></item>
 		<item name="wcf.acp.option.user_demprofilefieldoptions_showsidebar_enable"><![CDATA[eMark Profilfeld in der Sidebar-Auflistung anzeigen?]]></item>
-		<item name="wcf.acp.option.message_sidebar_user_options_sidebardemprofilefield"><![CDATA[eMark Profilfeld anzeigen:]]></item>
 	</category>
 </language>
