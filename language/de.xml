@@ -4,4 +4,9 @@
         	<item name="wcf.user.option.eMarkaddress"><![CDATA[Deutsche eMark]]></item>
         	<item name="wcf.user.option.eMarkaddress.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Gib{else}Geben Sie{/if} <strong>hier {if LANGUAGE_USE_INFORMAL_VARIANT}deine{else}Ihre{/if} eMark Adresse</strong> (z.B. NSpendebUuNUsYcTeZNgsfLkZVQeeDj5AV) ein.<br/><strong>Achtung! Die eMark Adresse kann nachträglich nicht geändert werden!</strong>]]></item>
 	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.user.demprofilefieldoptions"><![CDATA[Deutsche eMark Profilfeld]]></item>
+		<item name="wcf.acp.option.user_demprofilefieldoptions_showiconabout_enable"><![CDATA[eMark Profilfeld auf der "Über mich" Seite anzeigen?]]></item>
+		<item name="wcf.acp.option.user_demprofilefieldoptions_showiconsidebar_enable"><![CDATA[eMark Profilfeld in der Sidebar-Auflistung anzeigen?]]></item>
+	</category>
 </language>
