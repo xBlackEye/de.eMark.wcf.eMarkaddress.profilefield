@@ -23,8 +23,11 @@
     </compatibility>
    
     <instructions type="install">
-        <instruction type="file">files.tar</instruction>
-        <instruction type="userOption">userOption.xml</instruction>
-         <instruction type="language">language/*.xml</instruction>
+        <instruction type="language" />
+	<instruction type="file" />
+	<instruction type="userOption" />
+	<instruction type="option" />
+	<instruction type="templateListener" />
+	<instruction type="template" />
     </instructions>
 </package>
