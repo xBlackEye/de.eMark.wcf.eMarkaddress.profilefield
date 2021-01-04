@@ -4,7 +4,7 @@
 		<templatelistener name="messageSidebarUserOptionDemProfilefield">
 			<environment>user</environment>
 			<templatename>messageSidebar</templatename>
-			<eventname>beforeCredits</eventname>
+			<eventname>afterCredits</eventname>
 			<templatecode><![CDATA[{include file='__messageSidebarUserOptionDemProfilefield' application='wcf'}]]></templatecode>
 		</templatelistener>
 	</import>
