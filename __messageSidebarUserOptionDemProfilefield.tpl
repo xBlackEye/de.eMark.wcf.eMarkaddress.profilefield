@@ -1,7 +1,7 @@
 {if USER_DEMPROFILEFIELDOPTIONS_SHOWSIDEBAR_ENABLE == 1 && $userProfile->isAccessible('canViewProfile') && $userProfile->eMarkaddress}
 	<div style="max-wdith:100%;height:27px;"></div>
 	<div class="userDemProfilefield">
-		<a class="jsTooltip jsStaticDialog" data-dialog-id="{$userProfile->eMarkaddress}">
+		<a class="jsStaticDialog" data-dialog-id="{$userProfile->eMarkaddress}">
 			<i class="fa fa-qrcode"></i>
 			<img src="/images/style-2/favicon.ico" />
 		</a>
