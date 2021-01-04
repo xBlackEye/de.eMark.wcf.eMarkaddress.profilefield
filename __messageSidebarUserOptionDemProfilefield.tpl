@@ -1,23 +1,13 @@
-{if USER_DEMPROFILEFIELDOPTIONS_SHOWSIDEBAR_ENABLE == 1 && $userProfile->isAccessible('canViewProfile')}
-{assign var='__sidebarUserOptions' value=','|explode:MESSAGE_SIDEBAR_USER_OPTIONS_SIDEBARPROFILEFIELD}
+{if USER_DEMPROFILEFIELDOPTIONS_SHOWSIDEBAR_ENABLE == 1 && $userProfile->isAccessible('canViewProfile') && $userProfile->eMarkaddress}
 	<div class="userDemProfilefield">
-		{foreach from=$__sidebarUserOptions item='__sidebarUserOption'}
-			{if $userProfile->getUserOption($__sidebarUserOption)}
-			{assign var='__formattedUserOption' value=$userProfile->getFormattedUserOption($__sidebarUserOption)}
-				{if $__formattedUserOption}
-					{if $__sidebarUserOption == "eMarkaddress"}
-						<a class="jsTooltip jsStaticDialog" data-dialog-id="{$userProfile->eMarkaddress}" title="{$userProfile->eMarkaddress}">
-							<i style="font-size:50px;" class="fa fa-qrcode"></i>
-							<img src="/images/style-2/favicon.ico" style="position:absolute; left:6px; top:9px;">
-						</a>
-						<div id="{$userProfile->eMarkaddress}" class="jsStaticDialogContent" style="display:none;" data-title="{$userProfile->username}{lang}wcf.user.option.eMarkaddress.boxtitle{/lang}">
-							<center>
-								<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl={$userProfile->eMarkaddress}&chld=H|0" style="border:7px #e8be74 dashed;" title="{$userProfile->eMarkaddress}" />
-							</center>
-						</div>
-					{/if}
-				{/if}
-			{/if}
-		{/foreach}
+		<a class="jsTooltip jsStaticDialog" data-dialog-id="{$userProfile->eMarkaddress}">
+			<i class="fa fa-qrcode"></i>
+			<img src="/images/style-2/favicon.ico" />
+		</a>
+		<div id="{$userProfile->eMarkaddress}" class="jsStaticDialogContent" style="display:none;" data-title="{$userProfile->username}{lang}wcf.user.option.eMarkaddress.boxtitle{/lang}">
+			<center>
+				<img src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl={$userProfile->eMarkaddress}&chld=H|0" style="border:7px #e8be74 dashed;" title="{$userProfile->eMarkaddress}" />
+			</center>
+		</div>
 	</div>
 {/if}
