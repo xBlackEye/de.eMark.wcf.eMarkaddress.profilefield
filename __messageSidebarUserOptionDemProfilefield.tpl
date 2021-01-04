@@ -7,7 +7,7 @@
 				{if $__formattedUserOption}
 					{if $__sidebarUserOption == "eMarkaddress"}
 						<span class="jsTooltip jsStaticDialog" data-dialog-id="{$userProfile->eMarkaddress}" title="{$userProfile->eMarkaddress}">
-							<i style="font-size: 50px;" class="fa fa-qrcode"></i>
+							<i style="font-size:50px;" class="fa fa-qrcode"></i>
 							<img src="/images/style-2/favicon.ico" style="position:absolute; left:6px; top:9px;">
 						</span>
 						<div id="{$userProfile->eMarkaddress}" class="jsStaticDialogContent" style="display:none;" data-title="{$userProfile->username}{lang}wcf.user.option.eMarkaddress.boxtitle{/lang}">
