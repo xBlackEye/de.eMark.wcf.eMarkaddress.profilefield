@@ -1,5 +1,6 @@
 //pageID == 4 (Team-Seite)
-{if USER_DEMPROFILEFIELDOPTIONS_SHOWTEAM_ENABLE == 1 && $user->eMarkaddress && $__wcf->getActivePage() !== null && $__wcf->getActivePage()->pageID == 4}
+{if $user->eMarkaddress && $__wcf->getActivePage() !== null}
+	{if (USER_DEMPROFILEFIELDOPTIONS_SHOWTEAM_ENABLE == 1 && $__wcf->getActivePage()->pageID == 4) || (USER_DEMPROFILEFIELDOPTIONS_SHOWMEMBER_ENABLE == 1 && $__wcf->getActivePage()->pageID == 1)}
 	<div style="margin-left:50px;margin-right:10px;"></div>
 	<div class="teamDemProfilefield">
 		<a class="jsStaticDialog" data-dialog-id="{$user->eMarkaddress}">
@@ -13,4 +14,5 @@
 			</center>
 		</div>
 	</div>
+    {/if}
 {/if}
