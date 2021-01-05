@@ -7,5 +7,11 @@
 			<eventname>afterCredits</eventname>
 			<templatecode><![CDATA[{include file='__messageSidebarUserOptionDemProfilefield' application='wcf'}]]></templatecode>
 		</templatelistener>
+		<templatelistener name="messageSidebarUserOptionDemProfilefield">
+			<environment>user</environment>
+			<templatename>userListItem</templatename>
+			<eventname>demQR</eventname>
+			<templatecode><![CDATA[{include file='__teamUserDemProfilefield' application='wcf'}]]></templatecode>
+		</templatelistener>
 	</import>
 </data>
