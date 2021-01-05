@@ -2,8 +2,7 @@
 	<div style="max-wdith:100%;height:27px;"></div>
 	<div class="userDemProfilefield">
 		<a class="jsStaticDialog" data-dialog-id="{$userProfile->eMarkaddress}">
-			<i class="fa fa-qrcode"></i>
-			<img src="/images/style-2/favicon.ico" />
+			<i class="fa fa-qrcode"><img src="/images/style-2/favicon.ico" /></i>
 		</a>
 		<div id="{$userProfile->eMarkaddress}" class="jsStaticDialogContent" style="display:none;" data-title="{$userProfile->username}{lang}wcf.user.option.eMarkaddress.boxtitle{/lang}">
 			<center>
