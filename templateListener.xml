@@ -7,7 +7,7 @@
 			<eventname>afterCredits</eventname>
 			<templatecode><![CDATA[{include file='__messageSidebarUserOptionDemProfilefield' application='wcf'}]]></templatecode>
 		</templatelistener>
-		<templatelistener name="messageSidebarUserOptionDemProfilefield">
+		<templatelistener name="teamUserDemProfilefield">
 			<environment>user</environment>
 			<templatename>userListItem</templatename>
 			<eventname>demTeamQR</eventname>
