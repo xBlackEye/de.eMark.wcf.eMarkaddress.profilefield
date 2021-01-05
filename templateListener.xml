@@ -10,7 +10,7 @@
 		<templatelistener name="messageSidebarUserOptionDemProfilefield">
 			<environment>user</environment>
 			<templatename>userListItem</templatename>
-			<eventname>demQR</eventname>
+			<eventname>demTeamQR</eventname>
 			<templatecode><![CDATA[{include file='__teamUserDemProfilefield' application='wcf'}]]></templatecode>
 		</templatelistener>
 	</import>
