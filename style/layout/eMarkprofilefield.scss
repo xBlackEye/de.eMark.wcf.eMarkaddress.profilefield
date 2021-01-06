@@ -28,3 +28,19 @@ div.teamDemProfilefield a i.fa-qrcode img{
 div.teamDemProfilefield a i.fa-qrcode:hover{
 	color: #e8be74;
 }
+div.lexiconDemProfilefield{
+	position: absolute;
+	margin-left: 78px;
+	margin-top: 3px;
+}
+div.lexiconDemProfilefield a .fa-qrcode{
+	font-size: 50px;
+}
+div.lexiconDemProfilefield a i.fa-qrcode img{
+	position: absolute;
+	left: 6px;
+	top: 9px;
+}
+div.lexiconDemProfilefield a i.fa-qrcode:hover{
+	color: #e8be74;
+}
