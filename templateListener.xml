@@ -13,5 +13,11 @@
 			<eventname>demTeamQR</eventname>
 			<templatecode><![CDATA[{include file='__teamUserDemProfilefield' application='wcf'}]]></templatecode>
 		</templatelistener>
+		<templatelistener name="lexiconEntryUserDemProfilefield">
+			<environment>user</environment>
+			<templatename>entry</templatename>
+			<eventname>icons</eventname>
+			<templatecode><![CDATA[{include file='__lexiconEntryUserDemProfilefield' application='wcf'}]]></templatecode>
+		</templatelistener>
 	</import>
 </data>
